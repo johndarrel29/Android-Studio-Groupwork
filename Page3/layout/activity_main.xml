@@ -5,163 +5,194 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+    android:background="@drawable/resultbg"
+    app:layout_constraintEnd_toStartOf="@+id/constraintLayout4"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="@+id/main"
+    tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/resultbg" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="360dp"
-        android:layout_height="829dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginBottom="5dp"
+
+        android:id="@+id/constraintLayout4"
+        android:layout_width="371dp"
+        android:layout_height="821dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.492">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="60dp"
-            android:layout_marginBottom="35dp"
-            android:lineSpacingExtra="-15dp"
-            android:text="YOUR VOTE \nMATTERS!"
-            android:textAlignment="center"
-            android:textColor="#2A405E"
-            android:textSize="34sp"
-            app:autoSizeMaxTextSize="100sp"
-            app:autoSizeMinTextSize="10sp"
-            app:autoSizeStepGranularity="2sp"
-            app:autoSizeTextType="uniform"
-            app:fontFamily="@font/bevan"
-            app:layout_constraintBottom_toTopOf="@+id/textView2"
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout6"
+            android:layout_width="262dp"
+            android:layout_height="286dp"
+
+            android:layout_marginTop="192dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="Your Vote:"
-            android:textColor="#2A405E"
-            app:fontFamily="@font/archivo_black"
-            app:layout_constraintBottom_toTopOf="@+id/imageView2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/imageView2"
-            android:layout_width="191dp"
-            android:layout_height="189dp"
-            android:layout_marginStart="83dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="83dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
-            app:shapeAppearance="@style/RoundedSquare"
-            tools:srcCompat="@tools:sample/avatars" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="153dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginEnd="153dp"
-            android:layout_marginBottom="8dp"
-            android:text="President"
-            android:textColor="#2A405E"
-            android:textSize="12sp"
-            app:fontFamily="@font/archivo_black"
-            app:layout_constraintBottom_toTopOf="@+id/textView4"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView2"
+                android:layout_width="191dp"
+                android:layout_height="189dp"
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="80dp"
-            android:text="Name of the president"
-            android:textAlignment="center"
-            android:textColor="#2A405E"
-            android:textSize="16sp"
-            app:fontFamily="@font/archivo_black"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearance="@style/RoundedSquare"
+                tools:srcCompat="@tools:sample/avatars" />
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/imageView3"
-            android:layout_width="191dp"
-            android:layout_height="189dp"
-            android:layout_marginStart="83dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="83dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"
-            app:shapeAppearance="@style/RoundedSquare"
-            tools:srcCompat="@tools:sample/avatars" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Name of the president"
+                android:textAlignment="center"
+                android:textColor="#2A405E"
+                android:textSize="16sp"
+                app:fontFamily="@font/archivo_black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.522"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                app:layout_constraintVertical_bias="1.0" />
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="130dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginEnd="130dp"
-            android:text="Vice President"
-            android:textAlignment="center"
-            android:textColor="#2A405E"
-            android:textSize="12sp"
-            app:fontFamily="@font/archivo_black"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="President"
+                android:textColor="#2A405E"
+                android:textSize="12sp"
+                app:fontFamily="@font/archivo_black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="60dp"
-            android:layout_marginBottom="146dp"
-            android:text="Name of the Vice President"
-            android:textAlignment="center"
-            android:textColor="#2A405E"
-            android:textSize="16sp"
-            app:fontFamily="@font/archivo_black"
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="264dp"
+            android:layout_height="286dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+
+
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView6"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout6"
+            app:layout_constraintVertical_bias="0.0">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView3"
+                android:layout_width="191dp"
+                android:layout_height="189dp"
+                android:layout_marginStart="83dp"
+                android:layout_marginTop="16dp"
+
+                android:layout_marginEnd="83dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearance="@style/RoundedSquare"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name of the Vice President"
+                android:textAlignment="center"
+                android:textColor="#2A405E"
+                android:textSize="16sp"
+                app:fontFamily="@font/archivo_black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6"
+                app:layout_constraintVertical_bias="0.6" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Vice President"
+                android:textAlignment="center"
+                android:textColor="#2A405E"
+                android:textSize="12sp"
+
+                app:fontFamily="@font/archivo_black"
+                app:layout_constraintBottom_toTopOf="@+id/textView7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="324dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="-15dp"
+                android:text="YOUR VOTE \nMATTERS!"
+                android:textAlignment="center"
+                android:textColor="#2A405E"
+                android:textSize="32sp"
+                app:autoSizeMaxTextSize="100sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeStepGranularity="2sp"
+
+                app:autoSizeTextType="uniform"
+
+                app:fontFamily="@font/bevan"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.217" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Vote:"
+                android:textColor="#2A405E"
+                app:fontFamily="@font/archivo_black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.065"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
