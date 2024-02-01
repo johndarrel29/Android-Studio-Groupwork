@@ -26,6 +26,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#D7B075"
         android:text="ENTER"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
