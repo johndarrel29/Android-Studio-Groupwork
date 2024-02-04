@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aladin</item>
+        <item>@font/alata</item>
+        <item>@font/arbutus</item>
+        <item>@font/archivo_black</item>
+        <item>@font/asset</item>
+        <item>@font/bevan</item>
+        <item>@font/stardos_stencil</item>
+        <item>@font/stardos_stencil_bold</item>
+    </array>
+</resources>
